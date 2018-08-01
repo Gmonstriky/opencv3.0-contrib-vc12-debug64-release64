@@ -3,30 +3,30 @@ opencv3.0+contrib+vc12+debug64+release64
 opencv3.0加上contrib额外库进行cmake后的opencv库已经分别进行了64位的debug和release的VC12库编译。<br>
 直接下载进行VS配置即可。VS版本为VS2012或VS2013 <br>
 
-具体配置如下：<br>
-下载该文件<br>
-将文件放置自己喜欢的位置。<br>
-先进行系统变量的修改。<br>
-反击我的电脑->属性->高级系统设置->环境变量<br>
-在下面系统变量中找到PATH<br>
-然后在里面添加 *\vc12\bin 比如<br>
+The specific configuration is as follows: <br>
+Download the file <br>
+Place the files to where you like. <br>
+First of all, we should change the system variables. <br>
+Counterattack my computer -> attribute -> Advanced System Settings -> environment variables<br>
+find the PATH from System variables<br>
+then add the path *\vc12\bin for example:<br>
 D:\opencv3\opencv3.0+contrib+vc12+debug64+release64\x64\vc12\bin <br>
-弄完环境变量，要记得重启电脑<br>
+after it, resetting your computer<br>
 <br>
-接下来打开VS<br>
-创建一个win32控制台的工程<br>
-调出工程属性管理器<br>
-选择debug|x64或release|x64<br>
-反击该文件下的Microsoft.Cpp.Win64.user<br>
-选择通用属性->VC++目录，在包含目录里添加3个目录：<br>
+open your VS software<br>
+build a project of WIN32 console<br>
+choose the property manager<br>
+click debug|x64 or release|x64<br>
+Counterattack the Microsoft.Cpp.Win64.user<br>
+General property ->VC++ directory，add three path to include directory, for example<br>
 
             D:\opencv3\opencv3.0+contrib+vc12+debug64+release64\build\include\opencv2<br>
 
             D:\opencv3\opencv3.0+contrib+vc12+debug64+release64\build\include\opencv<br>
 
             D:\opencv3\opencv3.0+contrib+vc12+debug64+release64\build\include<br>
-同样在VC++目录下，在库目录里添加1个目录：D:\opencv3\opencv3.0+contrib+vc12+debug64+release64\build\x64\vc12\lib<br>
-选择通用属性->链接器->输入->附加依赖项，在附加依赖项里添加库文件<br>
+add path to library directory：D:\opencv3\opencv3.0+contrib+vc12+debug64+release64\build\x64\vc12\lib<br>
+General properties - > linker - > Input - > additional dependencies，add the .lib files<br>
 opencv_aruco320.lib<br>
 opencv_bgsegm320.lib<br>
 opencv_bioinspired320.lib<br>
@@ -68,6 +68,6 @@ opencv_xfeatures2d320.lib<br>
 opencv_ximgproc320.lib<br>
 opencv_xobjdetect320.lib<br>
 opencv_xphoto320.lib<br>
-以上为release64的lib文件，debug均在文件最后添加d<br>
-致此就已经配置完成了。<br>
+Above are the files of releasex64，the debug files should add "d" to the tail<br>
+Now the configuration is now complete! <br>
 
