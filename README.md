@@ -20,12 +20,12 @@ D:\opencv3\opencv3.0+contrib+vc12+debug64+release64\x64\vc12\bin <br>
 反击该文件下的Microsoft.Cpp.Win64.user<br>
 选择通用属性->VC++目录，在包含目录里添加3个目录：<br>
 
-            E:\opencv2.4.13\opencv\build\include\opencv2<br>
+            D:\opencv3\opencv3.0+contrib+vc12+debug64+release64\build\include\opencv2<br>
 
-            E:\opencv2.4.13\opencv\build\include\opencv<br>
+            D:\opencv3\opencv3.0+contrib+vc12+debug64+release64\build\include\opencv<br>
 
-            E:\opencv2.4.13\opencv\build\include<br>
-同样在VC++目录下，在库目录里添加1个目录：E:\opencv2.4.13\opencv\build\x86\vc12\lib<br>
+            D:\opencv3\opencv3.0+contrib+vc12+debug64+release64\build\include<br>
+同样在VC++目录下，在库目录里添加1个目录：D:\opencv3\opencv3.0+contrib+vc12+debug64+release64\build\x64\vc12\lib<br>
 选择通用属性->链接器->输入->附加依赖项，在附加依赖项里添加库文件<br>
 opencv_aruco320.lib<br>
 opencv_bgsegm320.lib<br>
