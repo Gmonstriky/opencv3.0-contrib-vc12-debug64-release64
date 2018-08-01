@@ -4,29 +4,46 @@ opencv3.0加上contrib额外库进行cmake后的opencv库已经分别进行了64
 直接下载进行VS配置即可。VS版本为VS2012或VS2013 <br>
 
 The specific configuration is as follows: <br>
-Download the file <br>
+1.Download the file <br>
+<br>
 Place the files to where you like. <br>
-First of all, we should change the system variables. <br>
+<br>
+2.First of all, we should change the system variables. <br>
+<br>
 Counterattack my computer -> attribute -> Advanced System Settings -> environment variables<br>
+<br>
 find the PATH from System variables<br>
+<br>
 then add the path *\vc12\bin for example:<br>
+<br>
 D:\opencv3\opencv3.0+contrib+vc12+debug64+release64\x64\vc12\bin <br>
+<br>
 after it, resetting your computer<br>
 <br>
-open your VS software<br>
+<br>
+3.open your VS software<br>
+<br>
 build a project of WIN32 console<br>
+<br>
 choose the property manager<br>
+<br>
 click debug|x64 or release|x64<br>
+<br>
 Counterattack the Microsoft.Cpp.Win64.user<br>
+<br>
 General property ->VC++ directory，add three path to include directory, for example<br>
+<br>
 
             D:\opencv3\opencv3.0+contrib+vc12+debug64+release64\build\include\opencv2<br>
+            <br>
 
             D:\opencv3\opencv3.0+contrib+vc12+debug64+release64\build\include\opencv<br>
+            <br>
 
             D:\opencv3\opencv3.0+contrib+vc12+debug64+release64\build\include<br>
-add path to library directory：D:\opencv3\opencv3.0+contrib+vc12+debug64+release64\build\x64\vc12\lib<br>
-General properties - > linker - > Input - > additional dependencies，add the .lib files<br>
+            <br>
+add path to library directory：D:\opencv3\opencv3.0+contrib+vc12+debug64+release64\build\x64\vc12\lib<br><br>
+General properties - > linker - > Input - > additional dependencies，add the .lib files<br><br>
 opencv_aruco320.lib<br>
 opencv_bgsegm320.lib<br>
 opencv_bioinspired320.lib<br>
@@ -67,7 +84,7 @@ opencv_videostab320.lib<br>
 opencv_xfeatures2d320.lib<br>
 opencv_ximgproc320.lib<br>
 opencv_xobjdetect320.lib<br>
-opencv_xphoto320.lib<br>
-Above are the files of releasex64，the debug files should add "d" to the tail<br>
+opencv_xphoto320.lib<br><br>
+Above are the files of releasex64，the debug files should add "d" to the tail<br><br>
 Now the configuration is now complete! <br>
 
