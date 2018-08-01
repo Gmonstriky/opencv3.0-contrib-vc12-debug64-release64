@@ -1,4 +1,4 @@
-# opencv3.0-contrib-vc12-debug64-release64
+# read me if you want to config it 
 opencv3.0+contrib+vc12+debug64+release64
 opencv3.0加上contrib额外库进行cmake后的opencv库已经分别进行了64位的debug和release的VC12库编译。<br>
 直接下载进行VS配置即可。VS版本为VS2012或VS2013 <br>
